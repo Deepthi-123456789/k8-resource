@@ -1,0 +1,12 @@
+apiVersion : v1
+kind : pos
+metadata: 
+  name: hello pod
+spec:
+  containers:
+    - name: hello-pod
+      image: nginx
+      ports:
+        -containerport: 80
+
+##pod is smallest deployable thing in kubernatives

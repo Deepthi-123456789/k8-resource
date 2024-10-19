@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: labels
+metadata: 
+  name: hello labels
+  labels:
+    course: devops
+    trainer: siva
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      ports:
+        - containerport: 80
+    - name: almalinux
+      image: almalinux:8
+      command: ['sleep','300']
+
+###labels are key value pair adds meta data and can be used for filtration.
+##used  to select another resources in kubernative
